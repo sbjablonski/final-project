@@ -1,0 +1,129 @@
+header{
+    background-color: #0243c3;
+
+    .masthead{
+    max-width: 90%;
+    }
+
+    img{
+        width: 50%;
+        padding: 20px;
+        display: inline;
+        float: left;
+    }
+
+    nav{
+        float: left;
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    ul{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    li{
+        display: inline;
+        padding-right: 15px;
+        color: #fff;
+        font-family: "Copse", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+}
+
+body{
+    background-color: #f0302b;
+}
+
+#main-container{
+    max-width: 80%;
+    margin-top: 0px;
+
+    .space{
+        width: 16.66%;
+        border: 1px solid transparent;
+    }
+
+    .beer-description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+        p{
+            font-family: "Copse", Helvetica, Arial, sans-serif;
+            color: #fff;
+            letter-spacing: .5px;
+            font-size: 100%;
+        }
+    }
+
+    .geek-stats li{
+        font-family: "Copse", Helvetica, Arial, sans-serif;
+        color: #fff;
+        letter-spacing: .5px;
+        font-size: 12px;
+        list-style: none;
+    }
+
+    .beer-can{
+    margin-top: -30px;
+
+        img{
+            max-width: 80%;
+            align-content: center;
+        }
+    }
+
+    .icons{
+        margin-right: 10px;
+        float: left;
+    }
+
+    .fa-video-camera{
+    color: #fff;
+    }
+
+    .fa-video-camera:hover{
+    color: #0243c3;
+    }
+}
+
+footer{
+    margin-top: 40px;
+    background-color: #0243c3;
+}
+
+.foot-container{
+    max-width: 70%;
+}
+
+.copyright-footer{
+    padding-top: 40px;
+    width: 33%;
+    display: inline;
+
+    p{
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: .5px;
+        font-family: "Copse", Helvetica, Arial, sans-serif;
+    }
+}
+.logo-footer{
+    padding: 40px;
+    width: 33%;
+    display: inline;
+}
+.social-footer{
+    padding-top: 40px;
+    width: 33%;
+    display: inline;
+
+.fa {
+    float: right;
+    color: #fff;
+    padding-right: 20px;
+}
+}
