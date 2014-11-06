@@ -54,7 +54,7 @@ body{
         float: left;
         z-index: 10;
         margin-top: 22.5%;
-        margin-left: 50px;
+        margin-left: 100px;
         color: #fff;
     }
 
@@ -73,30 +73,6 @@ body{
     }
 
 // BEERS //
-    #rodeoclown{
-        // All others set display: none to show only one on arrow click.
-    }
-    #sympathy{
-        display: none;
-    }
-    #hopadillo{
-        display: none;
-    }
-    #weekendwarrior{
-        display: none;
-    }
-    #barnburner{
-        display: none;
-    }
-    #lovestreet{
-        display: none;
-    }
-    #karbachtoberfest{
-        display: none;
-    }
-    #motherinlager{
-        display: none;
-    }
 
     .beer-type {
     margin-top: 40px;
@@ -106,6 +82,15 @@ body{
             color: #fff;
             letter-spacing: .5px;
             font-size: 100%;
+        }
+
+        li{
+            padding-right: 15px;
+            color: #fff;
+            font-family: "Copse", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 16px;
         }
     }
 
@@ -117,29 +102,32 @@ body{
         list-style: none;
     }
 
-    .beer-can{
-        margin-top: -50px;
+        .beer-img{
+            transition: left;
+            position: absolute;
+            margin-top: -80px;
 
-        img{
-            max-width: 80%;
+            img{
+                max-width: 80%;
+            }
+
         }
+
+    .beer-display{
+        display: none;
     }
 
-        #beer-img{
-            position: absolute;
-        }
-
-    @media (max-width: 900px){
+    @media (max-width: 600px){
 
         .beer-can{
             margin-top: 30px;
 
             img{
-                max-width: 90%;
+                max-width: 70%;
             }
         }
 
-        #beer-img{
+        .beer-img{
             position: static;
         }
 
@@ -169,8 +157,8 @@ body{
         cursor: hand;
         float: right;
         z-index: 10;
-        margin-top: 25%;
-        margin-right: -75px;
+        margin-top: -18%;
+        margin-right: 20px;
         color: #fff;
     }
 
