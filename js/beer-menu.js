@@ -40,32 +40,50 @@ $('#beer-right').on('click', function(){
             $('body').css('background-color','#f0302b');
             $('header').css('background-color','#282c89');
             $('footer').css('background-color','#282c89');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
 
         if ($('#sympathy').hasClass('no-display') != true){
             $('body').css('background-color','#c4b5ad');
             $('header').css('background-color','#ed4634');
             $('footer').css('background-color','#ed4634');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#hopadillo').hasClass('no-display') != true){
             $('body').css('background-color','#97dca4');
             $('header').css('background-color','#573a53');
             $('footer').css('background-color','#573a53');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#weekendwarrior').hasClass('no-display') != true){
             $('body').css('background-color','#35e181');
             $('header').css('background-color','#145444');
             $('footer').css('background-color','#145444');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#weisseversa').hasClass('no-display') != true){
             $('body').css('background-color','#b9a22f');
             $('header').css('background-color','#0094e1');
             $('footer').css('background-color','#0094e1');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#mother').hasClass('no-display') != true){
             $('body').css('background-color','#784e52');
             $('header').css('background-color','#202c39');
             $('footer').css('background-color','#202c39');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
             $(rodeoclown).addClass('no-display');
         };
     });
@@ -76,33 +94,51 @@ $('#beer-left').on('click', function(){
             $('body').css('background-color','#f0302b');
             $('header').css('background-color','#282c89');
             $('footer').css('background-color','#282c89');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
 
         if ($('#sympathy').hasClass('no-display') != true){
             $('body').css('background-color','#c4b5ad');
             $('header').css('background-color','#ed4634');
             $('footer').css('background-color','#ed4634');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#hopadillo').hasClass('no-display') != true){
             $('body').css('background-color','#97dca4');
             $('header').css('background-color','#573a53');
             $('footer').css('background-color','#573a53');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#weekendwarrior').hasClass('no-display') != true){
             $('body').css('background-color','#35e181');
             $('header').css('background-color','#145444');
             $('footer').css('background-color','#145444');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#weisseversa').hasClass('no-display') != true){
             $('body').css('background-color','#b9a22f');
             $('header').css('background-color','#0094e1');
             $('footer').css('background-color','#0094e1');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
         if ($('#mother').hasClass('no-display') != true){
             $('body').css('background-color','#784e52');
             $('header').css('background-color','#202c39');
             $('footer').css('background-color','#202c39');
             $(rodeoclown).addClass('no-display');
+            $('p').css('color','#fff');
+            $('li').css('color','#fff');
+            $('.fa').css('color','#fff');
         };
     });
 

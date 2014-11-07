@@ -47,9 +47,23 @@ body{
 }
 
 #about-us{
-    max-width: 53%;
+    max-width: 80%;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    p, h1, h2, h3, h4{
+        color: #fff;
+    }
+}
+
+#contact{
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    p, h1, h2, h3, h4{
+        color: #fff;
+    }
 }
 
 #beer-menu{
