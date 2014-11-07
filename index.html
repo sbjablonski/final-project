@@ -39,7 +39,10 @@
 
   </header>
 
-  <div id = "beer-left"><i class="fa fa-arrow-left fa-2x"></i></div>
+    <div id = "beer-nav" class = "row">
+      <div id = "beer-left"><i class="beer-click fa fa-arrow-left fa-2x"></i></div>
+      <div id = "beer-right"><i class="beer-click fa fa-arrow-right fa-2x"></i></div>
+    </div>
 
   <!-- BEER MENU -->
 
@@ -87,7 +90,7 @@
     <!-- SYMPATHY FOR THE LAGER -->
     <!-- SYMPATHY FOR THE LAGER -->
 
-    <div id= "sympathy" class="beer-type large-12 columns beer-display">
+    <div id= "sympathy" class="beer-type large-12 columns no-display">
 
       <div class ="space large-2 medium-2 columns"></div>
 
@@ -125,7 +128,7 @@
     <!-- HOPADILLO -->
     <!-- HOPADILLO -->
 
-    <div id= "hopadillo" class="beer-type large-12 columns beer-display">
+    <div id= "hopadillo" class="beer-type large-12 columns no-display">
 
       <div class ="space large-2 medium-2 columns"></div>
 
@@ -162,7 +165,7 @@
     <!-- WEEKEND WARRIOR -->
     <!-- WEEKEND WARRIOR -->
 
-    <div id= "weekendwarrior" class="beer-type large-12 columns beer-display">
+    <div id= "weekendwarrior" class="beer-type large-12 columns no-display">
 
       <div class ="space large-2 medium-2 columns"></div>
 
@@ -207,7 +210,7 @@
     <!-- WEISSE VERSA -->
     <!-- WEISSE VERSA -->
 
-    <div id= "weisseversa" class="beer-type large-12 columns beer-display">
+    <div id= "weisseversa" class="beer-type large-12 columns no-display">
 
       <div class ="space large-2 medium-2 columns"></div>
 
@@ -245,7 +248,7 @@
     <!-- MOTHER IN LAGER -->
     <!-- MOTHER IN LAGER -->
 
-    <div id= "mother" class="beer-type large-12 columns beer-display">
+    <div id= "mother" class="beer-type large-12 columns no-display">
 
       <div class ="space large-2 medium-2 columns"></div>
 
@@ -275,24 +278,31 @@
         <img class = "beer-img" src = "images/motherinlager.png"/>
 
       </div>
-
-    </div>
-
-  <div id = "beer-right"><i class="fa fa-arrow-right fa-2x"></i></div>
-
-  </div>   <!-- END BEER MENU-->
+  </div>
+  </div>   <!-- END MAIN CONTAINER-->
 
   </body>
 
   <footer>
+
     <div class="foot-container row">
-        <div class="copyright-footer 4-large columns"><p>Copyright © 2014</p></div>
-        <div class="logo-footer 4-large columns"><img src="images/karbach-logo.png"></div>
-        <div class="social-footer 4-large columns">
-          <i class="fa fa-envelope fa-2x"></i>
-          <i class="fa fa-twitter fa-2x"></i>
-          <i class="fa fa-facebook fa-2x"></i>
+
+        <div class="copyright-footer large-4 columns">
+          <p>Copyright © 2014</p>
         </div>
+
+        <div class="logo-footer large-4 columns">
+          <img src="images/karbach-logo.png">
+        </div>
+
+        <div class="social-footer large-4 columns">
+          <div class = "social-container">
+            <i class="fa fa-envelope fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-facebook fa-2x"></i>
+          </div>
+        </div>
+
     </div>
 
   </footer>
@@ -300,6 +310,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="strip/js/strip.pkgd.min.js"></script>
 <script type="text/javascript" src="nicescroll/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="visible-master/jquery.visible.min.js"></script>
 <script type="text/javascript" src="js/beer-menu.js"></script>
 <link rel="stylesheet" type="text/css" href="strip/css/strip.css"/>
 
