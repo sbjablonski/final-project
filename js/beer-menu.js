@@ -98,9 +98,9 @@ $('#beer-left').on('click', function(){
 
         };
         if ($('#hopadillo').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#97dca4');
+            $('.logo-cont').css('background-color','#9edfa5');
             $('header').css('background-color','#573a53');
-            $('footer').css('border-top','10px solid #97dca4');
+            $('footer').css('border-top','10px solid #9edfa5');
             $('footer').css('background-color','#573a53');
 
         };
@@ -112,9 +112,9 @@ $('#beer-left').on('click', function(){
 
         };
         if ($('#weisseversa').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#f9dd15');
+            $('.logo-cont').css('background-color','#e2c303');
             $('header').css('background-color','#0094e1');
-            $('footer').css('border-top','10px solid #f9dd15');
+            $('footer').css('border-top','10px solid #e2c303');
             $('footer').css('background-color','#0094e1');
 
         };

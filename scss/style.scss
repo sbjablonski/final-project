@@ -6,20 +6,25 @@ header{
         max-width: 100%;
 
         .logo-cont{
-            margin-left: -16px;
             background-color: #f0302b;
+            text-align: center;
+            margin-left: -5%;
 
             img{
-                margin-left: 5%;
                 margin-top: 5%;
                 margin-bottom: 5%;
                 width: 333px;
             }
+
+            @media (max-width: 1024px){
+                margin-left: -5%;
+                width: 110%;
+            }
         }
 
     .nav-cont{
-
         nav{
+            line-height: 150%;
             width: 100%;
             margin-top: 7.5%;
             margin-bottom: 5%;
@@ -28,16 +33,17 @@ header{
     }
 
     li{
+        line-height: 150%;
         display: inline;
         padding-right: 10px;
         color: #fff;
-        font-family: "Arvo", Helvetica, Arial, sans-serif;
+        font-family: "Arvo", Times New Roman, Times, serif;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 15px;
     }
 
-    .selected{ border-bottom: 4px solid #fff; padding:4px;}
+    .selected{ border-bottom: 4px solid #fff;}
 
     .fa{
         padding-right: 10px;
@@ -50,26 +56,88 @@ body{
 }
 
 #about-us{
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 20px;
     margin-bottom: 40px;
 
     p, h1, h2, h3, h4{
         color: #333;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(65);
+    }
+
+    img{
+        border: 1px solid black;
+        margin-top: 10px;
     }
 }
 
 #contact{
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 20px;
     margin-bottom: 40px;
 
-    p, h1, h2, h3, h4{
+    p, h1, h2, h3, h4, a{
+        opacity: 1;
         color: #333;
+        text-align: center;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(82);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(45);
+        letter-spacing: 2px;
+        text-align: center;
     }
 
     a{
-        color:#333;
+        opacity: .66;
+    }
+
+    a:hover{
+        margin-left: 25%;
+    }
+
+    .map{
+        text-align: center;
+
+        iframe{
+            width: 600px;
+            height: 450px;
+            frameborder: 0;
+            border-style: none;
+        }
+    }
+
+    @media (max-width: 600px){
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+            text-align: center;
+        }
     }
 }
 
@@ -80,14 +148,11 @@ body{
     margin-top: 0px;
     margin-bottom: 40px;
 
-
-    .space{
-        border: 1px solid transparent;
-    }
-
 // BEERS //
 
     .beer-type {
+        opacity: 1;
+        -webkit-transition: opacity .33s ease-in;
         margin-top: 30px;
 
         h1{ font-family: "Oswald", Helvetica, Arial, sans-serif;
@@ -100,7 +165,7 @@ body{
             }
 
         p{
-            font-family: "Arvo", Helvetica, Arial, sans-serif;
+            font-family: "Arvo", Times New Roman, Times, serif;
             color: #333;
             letter-spacing: .5px;
             font-size: 90%;
@@ -109,7 +174,7 @@ body{
         li{
             padding-right: 15px;
             color: #333;
-            font-family: "Arvo", Helvetica, Arial, sans-serif;
+            font-family: "Arvo", Times New Roman, Times, serif;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 80%;
@@ -117,7 +182,7 @@ body{
     }
 
     .geek-stats li{
-        font-family: "Arvo", Helvetica, Arial, sans-serif;
+        font-family: "Arvo", Times New Roman, Times, serif;
         color: #333;
         letter-spacing: .5px;
         font-size: 12px;
@@ -138,15 +203,22 @@ body{
     }
 
     .no-display{
-        display: none;
+        display: block;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        padding-bottom: 20px;
+        margin-top: -60px;
+        margin-bottom: 40px;
+        overflow: hidden;
     }
 
 
-
-    @media (max-width: 600px){
+    @media (max-width: 750px){
 
         .beer-can{
-            margin-top: 30px;
+            margin-top: 60px;
+            text-align: center;
 
             img{
                 max-width: 70%;
@@ -221,7 +293,7 @@ body{
     margin-bottom: 40px;
 
     h2{
-        font-family: "Arvo", Helvetica, Arial, sans-serif;
+        font-family: "Arvo", Times New Roman, Times, serif;
         text-transform: uppercase;
         font-weight: 700;
         color: #333;
@@ -234,7 +306,7 @@ body{
 
         img{
             text-align: center;
-            width: 80%;
+            width: 80px;
         }
 
         img:hover{
@@ -248,13 +320,6 @@ footer{
     background-color: #282c89;
     border-top: 10px solid #f0302b;
     clear: both;
-}
-
-.foot-secondcolor{
-    height: 100px;
-    width: 100px;
-    z-index: -10;
-    background-color: #f0302b;
 }
 
 .foot-container{
@@ -272,7 +337,7 @@ footer{
         font-size: 14px;
         color: #fff;
         letter-spacing: .5px;
-        font-family: "Arvo", Helvetica, Arial, sans-serif;
+        font-family: "Arvo", Times New Roman, Times, serif;
     }
 }
 
