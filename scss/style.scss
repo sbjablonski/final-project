@@ -56,9 +56,13 @@ body{
 }
 
 #about-us{
-    max-width: 90%;
+    max-width: 70%;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    p{
+        font-size: 90%;
+    }
 
     p, h1, h2, h3, h4{
         color: #333;
@@ -67,17 +71,30 @@ body{
     h1{
         font-family: "Oswald", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-        font-size: rem-calc(65);
+        font-size: rem-calc(55);
+        text-align: right;
     }
 
     img{
-        border: 1px solid black;
+        border-bottom: 5px solid #333;
+        padding-bottom: 20px;
         margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px){
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
     }
 }
 
 #contact{
-    max-width: 90%;
+    max-width: 70%;
     margin-top: 20px;
     margin-bottom: 40px;
 
@@ -87,10 +104,14 @@ body{
         text-align: center;
     }
 
+    p{
+        font-size: 90%;
+    }
+
     h1{
         font-family: "Oswald", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-        font-size: rem-calc(82);
+        font-size: rem-calc(78);
         letter-spacing: 2px;
         text-align: center;
     }
@@ -98,7 +119,7 @@ body{
     h2{
         font-family: "Oswald", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-        font-size: rem-calc(45);
+        font-size: rem-calc(42);
         letter-spacing: 2px;
         text-align: center;
     }
@@ -108,7 +129,7 @@ body{
     }
 
     a:hover{
-        margin-left: 25%;
+        opacity: 1;
     }
 
     .map{
@@ -119,6 +140,10 @@ body{
             height: 450px;
             frameborder: 0;
             border-style: none;
+        }
+
+        img{
+            display: none;
         }
     }
 
@@ -138,6 +163,293 @@ body{
             letter-spacing: 2px;
             text-align: center;
         }
+    }
+    @media (max-width: 1024px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                width: 70%;
+                height: 350px;
+                frameborder: 0;
+                border-style: none;
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+    }
+
+    @media (max-width: 600px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                display: none;
+            }
+
+            img{
+                display: inline;
+            }
+        }
+
+    }
+}
+
+#tours{
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    p, li{
+        font-size: 90%;
+    }
+
+    p, h1, h2, h3, h4, a{
+        opacity: 1;
+        color: #333;
+    }
+
+    .tour-img-cont{
+        text-align: center;
+    }
+
+    .directions{
+
+        p{font-size: 80%;}
+    }
+
+    img{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #333;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(82);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(65);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: rem-calc(28);
+    }
+
+    a{
+        opacity: .66;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+
+    .map{
+
+        iframe{
+            width: 100%;
+            height: 450px;
+            frameborder: 0;
+            border-style: none;
+        }
+
+        img{
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px){
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 1024px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                width: 70%;
+                height: 350px;
+                frameborder: 0;
+                border-style: none;
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+    }
+
+    @media (max-width: 600px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                display: none;
+            }
+
+            img{
+                display: inline;
+            }
+        }
+
+    }
+}
+
+#events{
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    p, li{
+        font-size: 90%;
+    }
+
+    p, h1, h2, h3, h4, a{
+        opacity: 1;
+        color: #333;
+    }
+
+    .tour-img-cont{
+        text-align: center;
+    }
+
+    .directions{
+
+        p{font-size: 80%;}
+    }
+
+    .dates{
+        margin-top: 8px;
+        text-align: right;
+    }
+
+    img{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #333;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(82);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(65);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: rem-calc(28);
+    }
+
+    a{
+        opacity: .66;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+
+    .map{
+
+        iframe{
+            width: 100%;
+            height: 450px;
+            frameborder: 0;
+            border-style: none;
+        }
+
+        img{
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px){
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 1024px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                width: 70%;
+                height: 350px;
+                frameborder: 0;
+                border-style: none;
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+    }
+
+    @media (max-width: 600px){
+
+        .map{
+            text-align: center;
+
+            iframe{
+                display: none;
+            }
+
+            img{
+                display: inline;
+            }
+        }
+
     }
 }
 
