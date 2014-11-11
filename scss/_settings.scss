@@ -131,10 +131,6 @@ $white       : #FFFFFF;
 $white       : #FFFFFF;
 $white       : #FFFFFF;
 
-$white       : #FFFFFF;
-$white       : #FFFFFF;
-$white       : #FFFFFF;
-
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
@@ -225,7 +221,7 @@ $body-font-family: 'Copse', Times New Roman, Times, serif;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
+ $h1-font-size: rem-calc(50);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
@@ -275,8 +271,8 @@ $body-font-family: 'Copse', Times New Roman, Times, serif;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $white;
+$anchor-font-color-hover: scale-color($white, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
