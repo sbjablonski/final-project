@@ -37,38 +37,38 @@
 $('#beer-right').on('click', function(){
         if ($('#rodeoclown').hasClass('no-display') != true){
             $(beerlast).addClass('no-display');
-            $('.logo-cont').css('background-color','#f0302b');
-            $('header').css('background-color','#282c89');
-            $('footer').css('border-top','10px solid #f0302b');
-            $('footer').css('background-color','#282c89');
+            $('.logo-cont').css('background-color','#E8413A');
+            $('header').css('background-color','#25337E');
+            $('footer').css('border-top','10px solid #E8413A');
+            $('footer').css('background-color','#25337E');
         };
 
         if ($('#sympathy').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#c4b5ad');
-            $('header').css('background-color','#b22f11');
-            $('footer').css('border-top','10px solid #c4b5ad');
-            $('footer').css('background-color','#b22f11');
+            $('.logo-cont').css('background-color','#9A9287');
+            $('header').css('background-color','#BC3115');
+            $('footer').css('border-top','10px solid #9A9287');
+            $('footer').css('background-color','#BC3115');
 
         };
         if ($('#hopadillo').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#97dca4');
-            $('header').css('background-color','#573a53');
-            $('footer').css('border-top','10px solid #97dca4');
-            $('footer').css('background-color','#573a53');
+            $('.logo-cont').css('background-color','#80BF8D');
+            $('header').css('background-color','#473037');
+            $('footer').css('border-top','10px solid #80BF8D');
+            $('footer').css('background-color','#473037');
 
         };
         if ($('#weekendwarrior').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#35e181');
+            $('.logo-cont').css('background-color','#4ACC75');
             $('header').css('background-color','#145444');
-            $('footer').css('border-top','10px solid #35e181');
+            $('footer').css('border-top','10px solid #4ACC75');
             $('footer').css('background-color','#145444');
 
         };
         if ($('#weisseversa').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#f9dd15');
-            $('header').css('background-color','#0094e1');
-            $('footer').css('border-top','10px solid #f9dd15');
-            $('footer').css('background-color','#0094e1');
+            $('.logo-cont').css('background-color','#FFD156');
+            $('header').css('background-color','#0BA8DB');
+            $('footer').css('border-top','10px solid #FFD156');
+            $('footer').css('background-color','#0BA8DB');
 
         };
         if ($('#mother').hasClass('no-display') != true){
@@ -83,31 +83,31 @@ $('#beer-right').on('click', function(){
 $('#beer-left').on('click', function(){
         if ($('#rodeoclown').hasClass('no-display') != true){
             $(beerlast).addClass('no-display');
-            $('.logo-cont').css('background-color','#f0302b');
-            $('header').css('background-color','#282c89');
-            $('footer').css('border-top','10px solid #f0302b');
-            $('footer').css('background-color','#282c89');
+            $('.logo-cont').css('background-color','#E8413A');
+            $('header').css('background-color','#25337E');
+            $('footer').css('border-top','10px solid #E8413A');
+            $('footer').css('background-color','#25337E');
 
         };
 
         if ($('#sympathy').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#c4b5ad');
-            $('header').css('background-color','#b22f11');
-            $('footer').css('border-top','10px solid #c4b5ad');
-            $('footer').css('background-color','#b22f11');
+            $('.logo-cont').css('background-color','#9A9287');
+            $('header').css('background-color','#BC3115');
+            $('footer').css('border-top','10px solid #9A9287');
+            $('footer').css('background-color','#BC3115');
 
         };
         if ($('#hopadillo').hasClass('no-display') != true){
             $('.logo-cont').css('background-color','#9edfa5');
-            $('header').css('background-color','#573a53');
+            $('header').css('background-color','#473037');
             $('footer').css('border-top','10px solid #9edfa5');
-            $('footer').css('background-color','#573a53');
+            $('footer').css('background-color','#473037');
 
         };
         if ($('#weekendwarrior').hasClass('no-display') != true){
-            $('.logo-cont').css('background-color','#35e181');
+            $('.logo-cont').css('background-color','#4ACC75');
             $('header').css('background-color','#145444');
-            $('footer').css('border-top','10px solid #35e181');
+            $('footer').css('border-top','10px solid #4ACC75');
             $('footer').css('background-color','#145444');
 
         };
