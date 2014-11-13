@@ -17,15 +17,15 @@ header{
             }
 
             @media (max-width: 1024px){
-                margin-left: -5%;
-                width: 110%;
+                margin-left: -3%;
+                width: 104.5%;
             }
         }
 
     .nav-cont{
         nav{
             line-height: 150%;
-            width: 100%;
+            max-width: 100%;
             margin-top: 7.5%;
             margin-bottom: 5%;
             text-align: center;
@@ -53,6 +53,15 @@ header{
 
 body{
     background-color: #f6f6ef;
+}
+
+#main{
+    max-width: 100%;
+
+    img{
+        max-width: 102%;
+        margin-left: -15px;
+    }
 }
 
 #about-us{
@@ -442,7 +451,7 @@ body{
     width: 70%;
     padding-bottom: 20px;
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 // BEERS //
 
@@ -584,9 +593,9 @@ body{
 
 .beer-case{
     border-top: 5px solid #333;
-    padding: 40px;
+    padding: 20px;
     width: 70%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     h2{
         font-family: "Arvo", Times New Roman, Times, serif;
@@ -597,7 +606,8 @@ body{
         }
 
     .beer-bug{
-
+        cursor: pointer;
+        cursor: hand;
         margin-top:20px;
 
         img{
