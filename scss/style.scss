@@ -214,6 +214,35 @@ body{
     margin-top: 20px;
     margin-bottom: 40px;
 
+    .tour-nav{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-top: 5px solid #333;
+
+        a{
+            opacity: 1;
+        }
+
+        a:hover{
+            opacity: .66;
+        }
+
+        .fa{
+            padding: 8px;
+        }
+
+        li{
+            display: inline;
+        }
+
+        .selected{ border-bottom: 4px solid #333; padding-bottom: 4px;}
+    }
+
     p, li{
         font-size: 90%;
     }
@@ -264,6 +293,11 @@ body{
 
     a:hover{
         opacity: 1;
+    }
+
+    .private-events{
+        border-top: 5px solid #333;
+        padding-top: 20px;
     }
 
     .map{
@@ -403,6 +437,7 @@ body{
         text-transform: uppercase;
         font-size: rem-calc(82);
         letter-spacing: 2px;
+        color: #333;
         text-align: center;
     }
 
@@ -411,6 +446,7 @@ body{
         text-transform: uppercase;
         font-size: rem-calc(65);
         letter-spacing: 2px;
+        color: #333;
         text-align: center;
     }
 

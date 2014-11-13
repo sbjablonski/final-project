@@ -1,4 +1,4 @@
-// ON CLICK BEER TOGGLE - When arrow is clicked, hide current beer-type and show next beer in the array. //
+// ON CLICK BEER TOGGLE - When arrow is clicked, hide current beer-type and show next beer in the array. When beer is clicked, display that beer.//
 
     var beersarray = ["rodeoclown","sympathy","hopadillo","weekendwarrior","weisseversa","barnburner","lovestreet","karbachtoberfest","mother"];
     var beercount = 0; // Start at "sympathy" in the array (since "rodeoclown" loads with the page). //
