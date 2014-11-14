@@ -237,13 +237,14 @@ body{
         }
 
         li{
+            white-space: nowrap;
             display: inline;
         }
 
         .selected{ border-bottom: 4px solid #333; padding-bottom: 4px;}
     }
 
-    p, li{
+    p{
         font-size: 90%;
     }
 
@@ -261,10 +262,17 @@ body{
         p{font-size: 80%;}
     }
 
-    img{
+    .tour-img{
         margin-bottom: 20px;
         padding-bottom: 20px;
         border-bottom: 5px solid #333;
+    }
+
+    .brewscruise-img{
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-top: 5px solid #333;
     }
 
     h1{
@@ -295,7 +303,7 @@ body{
         opacity: 1;
     }
 
-    .private-events{
+    .tour-events{
         border-top: 5px solid #333;
         padding-top: 20px;
     }
@@ -314,24 +322,7 @@ body{
         }
     }
 
-    @media (max-width: 600px){
-         h1{
-            font-family: "Oswald", Helvetica, Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: rem-calc(62);
-            letter-spacing: 2px;
-            text-align: center;
-        }
-
-        h2{
-            font-family: "Oswald", Helvetica, Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: rem-calc(25);
-            letter-spacing: 2px;
-            text-align: center;
-        }
-    }
-    @media (max-width: 1024px){
+    @media #{$medium-only}{
 
         .map{
             text-align: center;
@@ -350,7 +341,23 @@ body{
 
     }
 
-    @media (max-width: 600px){
+    @media #{$small-only}{
+
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+            text-align: center;
+        }
 
         .map{
             text-align: center;
@@ -400,6 +407,7 @@ body{
 
         li{
             display: inline;
+            white-space: nowrap;
         }
 
         .selected{ border-bottom: 4px solid #333; padding-bottom: 4px;}
@@ -417,10 +425,6 @@ body{
 
     img{
         border: 1px solid #333;
-    }
-
-    p, h1, h2, h3, h4, a{
-        opacity: 1;
     }
 
     .tour-img-cont{
@@ -463,13 +467,17 @@ body{
         opacity: 1;
     }
 
-    @media (max-width: 600px){
-         h1{
+    @media #{$small-only}{
+
+        p, h1, h2, h3, h4, a{
+        text-align: center;
+        }
+
+        h1{
             font-family: "Oswald", Helvetica, Arial, sans-serif;
             text-transform: uppercase;
             font-size: rem-calc(62);
             letter-spacing: 2px;
-            text-align: center;
         }
 
         h2{
@@ -477,6 +485,9 @@ body{
             text-transform: uppercase;
             font-size: rem-calc(25);
             letter-spacing: 2px;
+        }
+
+        .dates{
             text-align: center;
         }
     }
@@ -553,7 +564,6 @@ body{
         margin-bottom: 40px;
         overflow: hidden;
     }
-
 
     @media (max-width: 750px){
 
