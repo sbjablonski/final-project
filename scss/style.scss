@@ -63,6 +63,11 @@ body{
         z-index: 1;
     }
 
+    .backgroundImage{
+        max-width: 100%;
+        height: auto;
+    }
+
     #main{
         p{
             font-size: 90%;
@@ -164,7 +169,6 @@ footer{
     transition: background-color 0.5s ease;
     background-color: #25337E;
     border-top: 10px solid #E8413A;
-    clear: both;
 }
 
 .foot-container{
