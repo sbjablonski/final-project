@@ -11,8 +11,8 @@
     settings : {
       animation: 'fadeAndPop',
       animation_speed: 250,
-      close_on_background_click: true,
-      close_on_esc: true,
+      close_on_background_click: false,
+      close_on_esc: false,
       dismiss_modal_class: 'close-reveal-modal',
       bg_class: 'reveal-modal-bg',
       root_element: 'body',
@@ -48,7 +48,7 @@
         .off('.reveal')
         .on('click.fndtn.reveal', '[' + this.add_namespace('data-reveal-id') + ']:not([disabled])', function (e) {
           e.preventDefault();
-        
+
           if (!self.locked) {
             var element = S(this),
                 ajax = element.data(self.data_attr('reveal-ajax'));

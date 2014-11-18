@@ -1,0 +1,118 @@
+#events{
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    p{
+        font-size: 90%;
+    }
+
+    .event-locations{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-top: 5px solid #333;
+
+        a{
+            opacity: 1;
+        }
+
+        a:hover{
+            opacity: .66;
+        }
+
+        .fa{
+            padding: 8px;
+        }
+
+        li{
+            display: inline;
+            white-space: nowrap;
+        }
+
+        .selected{ border-bottom: 4px solid #333; padding-bottom: 4px;}
+    }
+
+    .event{
+        padding-top: 10px;
+    }
+
+    .event-photo{
+        max-width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    img{
+        border: 1px solid #333;
+    }
+
+    .tour-img-cont{
+        text-align: center;
+    }
+
+    .dates{
+        margin-top: 8px;
+        text-align: right;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(82);
+        letter-spacing: 2px;
+        color: #333;
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(65);
+        letter-spacing: 2px;
+        color: #333;
+        text-align: center;
+    }
+
+    h3{
+        font-size: rem-calc(28);
+    }
+
+    a{
+        color: #333;
+        opacity: .66;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+
+    @media #{$small-only}{
+
+        p, h1, h2, h3, h4, a{
+        text-align: center;
+        }
+
+        h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+        }
+
+        .dates{
+            text-align: center;
+        }
+    }
+}

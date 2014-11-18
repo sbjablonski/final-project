@@ -1,0 +1,189 @@
+#beer-menu{
+    display: block;
+    width: 70%;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+// BEERS //
+
+    .beer-type {
+        opacity: 1;
+        -webkit-transition: opacity .33s ease-in;
+        margin-top: 30px;
+
+        h1{ font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            display: inline;
+            font-size: rem-calc(70);
+            font-weight: 700;
+            color: #333;
+            letter-spacing: .5px;
+            }
+
+        p{
+            font-family: "Arvo", Times New Roman, Times, serif;
+            color: #333;
+            letter-spacing: .5px;
+            font-size: 90%;
+        }
+
+        li{
+            padding-right: 15px;
+            color: #333;
+            font-family: "Arvo", Times New Roman, Times, serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 80%;
+        }
+    }
+
+    .geek-stats li{
+        font-family: "Arvo", Times New Roman, Times, serif;
+        color: #333;
+        letter-spacing: .5px;
+        font-size: 12px;
+        list-style: none;
+    }
+
+    .beer-img{
+        position: absolute;
+        margin-top: -50px;
+        text-align: center;
+
+        img{
+            max-width: 80%;
+            text-align: center;
+        }
+
+    }
+
+    .no-display{
+        display: block;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        padding-bottom: 20px;
+        margin-top: -60px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    @media (max-width: 750px){
+
+        text-align: center;
+
+        .beer-type h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            display: inline;
+            font-size: rem-calc(35);
+            font-weight: 700;
+            color: #333;
+            letter-spacing: .5px;
+        }
+
+        .beer-can{
+            margin-top: 60px;
+            text-align: center;
+
+            img{
+                max-width: 70%;
+            }
+        }
+
+        .beer-img{
+            position: static;
+        }
+
+        .space{
+            display: none;
+        }
+
+    }
+
+    .icons{
+        margin-right: 10px;
+        float: left;
+    }
+
+    .fa-video-camera{
+        transition: background-color 0.5s ease;
+        color: #333;
+        opacity: .66;
+    }
+
+    .fa-video-camera:hover{
+        color: #333;
+        opacity: 1;
+    }
+
+}
+
+#beer-nav{
+        max-width: 80%;
+        z-index: 1;
+        position: absolute;
+        margin: 20% 0 0 10%;
+
+        .fa-arrow-left{
+            float: left;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+            cursor: hand;
+            color: #333;
+            opacity: .66;
+        }
+
+        .fa-arrow-left:hover{
+            opacity: 1;
+        }
+
+        .fa-arrow-right{
+            float: right;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+            cursor: hand;
+            color: #333;
+            opacity: .66;
+        }
+
+    .fa-arrow-right:hover{
+            opacity: 1;
+        }
+
+    @media #{$small-only}{
+        display: none;
+    }
+
+}
+
+.beer-case{
+    border-top: 5px solid #333;
+    padding: 20px;
+    width: 70%;
+    margin-bottom: 20px;
+
+    h2{
+        font-family: "Arvo", Times New Roman, Times, serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #333;
+        letter-spacing: .5px;
+        }
+
+    .beer-bug{
+        cursor: pointer;
+        cursor: hand;
+        margin-top:20px;
+
+        img{
+            text-align: center;
+            width: 80px;
+        }
+
+        img:hover{
+            position: relative;
+            top: -5px;}
+    }
+}

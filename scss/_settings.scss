@@ -111,7 +111,7 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
+$oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
 
@@ -448,9 +448,9 @@ $anchor-font-color-hover: scale-color($white, $lightness: -14%);
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: $white;
-// $button-font-color-alt: $oil;
-// $button-font-tny: rem-calc(11);
+$button-font-color: #f6f6ef ;
+$button-font-color-alt: $white;
+$button-font-tny: rem-calc(13);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
@@ -461,11 +461,11 @@ $anchor-font-color-hover: scale-color($white, $lightness: -14%);
 // $button-function-factor: -20%;
 
 // We use these to control button border and hover styles.
-// $button-border-width: 0px;
+$button-border-width: 2px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+$button-bg-color: #333;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
-// $button-border-color: $button-bg-hover;
+$button-border-color: $oil;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
@@ -641,7 +641,7 @@ $anchor-font-color-hover: scale-color($white, $lightness: -14%);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
+$input-bg-color: #f6f6ef;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
 // $input-border-color: scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
@@ -1106,8 +1106,8 @@ $anchor-font-color-hover: scale-color($white, $lightness: -14%);
 // $reveal-overlay-bg-old: $black;
 
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: $white;
-// $reveal-position-top: rem-calc(100);
+$reveal-modal-bg: #f6f6ef;
+$reveal-position-top: rem-calc(190);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
 // $reveal-modal-padding: rem-calc(20);

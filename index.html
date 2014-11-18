@@ -1,12 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karbach | Brewing Co.</title>
     <link rel="stylesheet" href="css/app.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
-
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
@@ -15,41 +17,117 @@
 
   <body>
 
-  <header>
+    <header>
 
-    <div class="masthead row">
-      <div class="large-12 columns">
-        <div class="logo-cont large-6 medium-12 columns">
-          <a href="index.html"><img src="images/karbach-logo.png"></a>
-        </div>
-        <div class="nav-cont large-6 medium-12 columns">
-        <nav>
-        <ul class="top-nav">
-          <li><a href="about.html">About</a></li>
-          <li><i class="fa fa-star"></i> <a href="beers.html">Beers</a></li>
-          <li><i class="fa fa-star"></i> <a href="events.html">Events</a></li>
-          <li><i class="fa fa-star"></i> <a href="tours.html">Tours</a></li>
-          <li><i class="fa fa-star"></i> <a href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
+      <div class="masthead row">
+        <div class="large-12 columns">
+          <div class="logo-cont large-6 medium-12 columns">
+            <a href="index.html"><img src="images/karbach-logo.png"></a>
+          </div>
+          <div class="nav-cont large-6 medium-12 columns">
+          <nav>
+          <ul class="top-nav">
+            <li><a href="about.html">About</a></li>
+            <li><i class="fa fa-star"></i> <a href="beers.html">Beers</a></li>
+            <li><i class="fa fa-star"></i> <a href="events.html">Events</a></li>
+            <li><i class="fa fa-star"></i> <a href="tours.html">Tours</a></li>
+            <li><i class="fa fa-star"></i> <a href="contact.html">Contact</a></li>
+          </ul>
+          </nav>
+          </div>
         </div>
       </div>
-    </div>
-
-  </header>
+    </header>
 
 <!-- MAIN SECTION -->
 
   <div id = "main" class="row">
 
-    <div class="main-img-cont large-12 columns">
-      <img src="images/main.png" alt="Beer barrels">
+    <div class="orbit-cont row">
+
+          <ul class="orbit" data-orbit data-options="
+              animation_speed: 800;
+              navigation_arrows: false;
+              pauseOnHover: false;
+              bullets: false;">
+
+            <li data-orbit-slide="headline-1">
+              <div>
+                <a href="beers.html"><h1>Mother in Lager</h1>
+                <h3>Seasonal Brew Now Available</h3></a>
+              </div>
+            </li>
+
+            <li data-orbit-slide="headline-2">
+              <div>
+                <a href="tours.html"><h1>Tours &amp; Tastings</h1>
+                <h3>Mondays, Thursdays, Fridays &amp; Saturdays</h3></a>
+              </div>
+            </li>
+
+            <li data-orbit-slide="headline-3">
+              <div>
+                <a href="events.html"><h1>Black Friday Hours</h1>
+                <h3>Shake off the turkey day food coma</h3></a>
+              </div>
+            </li>
+
+          </ul>
+
+    </div>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function(){jQuery('#ageCheck').foundation('reveal', 'open')});
+    </script>
+
+    <div id="ageCheck" class="reveal-modal small" data-reveal>
+      <div class = "ageCheck_content row">
+        <a class = "large-6 columns" href="index.html"><img src="images/karbach-logo-black.png"></a>
+        <h1 class = "large-6 columns">Age Check</h1>
+        <p class="lead large-12 columns">Please verify your age.</p>
+      <form>
+        <div class="row">
+            <div class="large-3 columns">
+              <label>
+                <input type="text" name="Year" placeholder="Year" />
+              </label>
+            </div>
+            <div class="large-3 columns">
+              <label>
+                <input type="text" name="Month" placeholder="Month" />
+              </label>
+            </div>
+            <div class="large-3 columns">
+              <label>
+                <input type="text" name="Day" placeholder="Day" />
+              </label>
+            </div>
+            <a role="button" type="submit" name="submit" value="Submit" aria-label="submit form" href="#" class="button tiny">Submit</a>
+        </div>
+      </form>
       </div>
     </div>
 
-  <!-- END ABOUT SECTION -->
+      <script type="text/javascript">
+        $(document).foundation();
+        $('a.button').click(function(){
+        $('#ageCheck').foundation('reveal', 'close');
+        });
+      </script>
 
-    <footer>
+  </div>
+
+  <div class = "overlay"></div>
+
+  <div class="backgroundImage">
+    <img src="images/main.png" alt="Barrels">
+  </div>
+
+  <!-- END MAIN SECTION -->
+
+  </body>
+
+<footer>
 
     <div class="foot-container row">
 
@@ -71,13 +149,12 @@
 
     </div>
 
-  </footer>
+</footer>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="strip/js/strip.pkgd.min.js"></script>
-<script type="text/javascript" src="nicescroll/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="visible-master/jquery.visible.min.js"></script>
-<script type="text/javascript" src="js/beer-menu.js"></script>
+<script type="text/javascript" src="js/beer-menu-test.js"></script>
+<script src="js/app.js"></script>
 <link rel="stylesheet" type="text/css" href="strip/css/strip.css"/>
 
 </html>

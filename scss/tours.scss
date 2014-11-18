@@ -1,0 +1,171 @@
+#tours{
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .tour-nav{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-top: 5px solid #333;
+
+        a{
+            opacity: 1;
+        }
+
+        a:hover{
+            opacity: .66;
+        }
+
+        .fa{
+            padding: 8px;
+        }
+
+        li{
+            white-space: nowrap;
+            display: inline;
+        }
+
+        .selected{ border-bottom: 4px solid #333; padding-bottom: 4px;}
+    }
+
+    p{
+        font-size: 90%;
+    }
+
+    p, h1, h2, h3, h4, a{
+        opacity: 1;
+        color: #333;
+    }
+
+    .tour-img-cont{
+        text-align: center;
+    }
+
+    .directions{
+
+        p{font-size: 80%;}
+    }
+
+    .tour-img{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #333;
+    }
+
+    .brewscruise-img{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-top: 5px solid #333;
+    }
+
+    h1{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(82);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(65);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: rem-calc(28);
+    }
+
+    h5{
+        font-size: rem-calc(16);
+        line-height: 175%;
+    }
+
+    a{
+        opacity: .66;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+
+    .tour-events{
+        border-top: 5px solid #333;
+        padding-top: 20px;
+    }
+
+    .map{
+
+        iframe{
+            max-width: 430px;
+            width: 100%;
+            height: 430px;
+            frameborder: 0;
+            border-style: none;
+        }
+
+        img{
+            display: none;
+        }
+    }
+
+    @media #{$medium-only}{
+
+        .map{
+            text-align: center;
+
+            iframe{
+                width: 70%;
+                height: 350px;
+                frameborder: 0;
+                border-style: none;
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+    }
+
+    @media #{$small-only}{
+
+         h1{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(62);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Oswald", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: rem-calc(25);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .map{
+            text-align: center;
+
+            iframe{
+                display: none;
+            }
+
+            img{
+                display: inline;
+            }
+        }
+
+    }
+}

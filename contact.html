@@ -42,29 +42,63 @@
 
   <div id = "contact" class="row">
 
-    <div class="large-12 columns">
-
-      <div class = "large-12 columns">
+      <div class = "questions large-12 columns">
 
         <h1>Questions?  Concerns?</h1><h2>Something you're just dying to tell us?</h2>
 
       </div>
 
-      <div class = "large-12 columns">
-        <br>
-        <h3>Email us at <a href = "mailto:info@karbachbrewing.com">info@karbachbrewing.com</a></h3>
-        <br>
-      </div>
+      <form>
+        <div class="row">
+          <div class="large-3 columns">
+            <label>
+              <input type="text" name="first_name" placeholder="First name" />
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>
+              <input type="text" name="last_name" placeholder="Last name" />
+            </label>
+          </div>
+          <div class="large-6 columns">
+            <label>
+              <input type="text" name="email" placeholder="E-mail address" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-10 columns">
+            <label>
+              <textarea rows= "5" name="message" placeholder="Your message here"></textarea>
+            </label>
+          </div>
+          <a role="button" type="submit" name="submit" value="Submit" aria-label="submit form" href="#" class="button">Submit</a>
+        </div>
+      </form>
+
+      <?php
+        if(isset($_POST['submit'])){
+            $to = "stephenbjablonski@gmail.com"; // this is your Email address
+            $from = $_POST['email']; // this is the sender's Email address
+            $first_name = $_POST['first_name'];
+            $last_name = $_POST['last_name'];
+            $subject = "Form submission";
+            $subject2 = "Copy of your form submission";
+            $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+            $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+            $headers = "From:" . $from;
+            $headers2 = "From:" . $to;
+            mail($to,$subject,$message,$headers);
+            mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+            echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+            // You can also use header('Location: thank_you.php'); to redirect to another page.
+            }
+      ?>
 
       <div class = "large-12 columns">
 
-        <h2>Want to work for us?</h2>
-
-      </div>
-
-      <div class = "large-12 columns">
-        <br>
-        <h3>Send resumes to <a href = "mailto:resumes@karbachbrewing.com ">resumes@karbachbrewing.com</a></h3>
+        <h2>Want to work for us?</h3><h4>Send resumes to <a href = "mailto:resumes@karbachbrewing.com ">resumes@karbachbrewing.com</a></h4>
         <br>
       </div>
 
@@ -75,7 +109,6 @@
 
       </div>
 
-    </div>
   </div>
 
   </body>
@@ -108,7 +141,6 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="strip/js/strip.pkgd.min.js"></script>
-<script type="text/javascript" src="nicescroll/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="visible-master/jquery.visible.min.js"></script>
 <script type="text/javascript" src="js/beer-menu.js"></script>
 <link rel="stylesheet" type="text/css" href="strip/css/strip.css"/>
