@@ -1,12 +1,47 @@
 header{
     transition: background-color 0.5s ease;
-    background-color: #DCDCD6;
+    background-color: #f6f6ef;
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f6ef), to(#DCDCD6));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #f6f6ef, #DCDCD6);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #f6f6ef, #DCDCD6);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #f6f6ef, #DCDCD6);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #f6f6ef, #DCDCD6);
+
+    -webkit-box-shadow: 0 6px 8px -6px #333;
+    -moz-box-shadow: 0 6px 8px -6px #333;
+    box-shadow: 0 6px 8px -6px #333;
 
     .masthead{
         max-width: 100%;
 
         .logo-cont{
-            background-color: #333;
+            background-color: #E8413A;
+
+            /* Safari 4-5, Chrome 1-9 */
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#CE3A34));
+
+            /* Safari 5.1, Chrome 10+ */
+            background: -webkit-linear-gradient(top, #E8413A, #CE3A34);
+
+            /* Firefox 3.6+ */
+            background: -moz-linear-gradient(top, #E8413A, #CE3A34);
+
+            /* IE 10 */
+            background: -ms-linear-gradient(top, #E8413A, #CE3A34);
+
+            /* Opera 11.10+ */
+            background: -o-linear-gradient(top, #E8413A, #CE3A34);
+
             text-align: center;
             margin-left: -5%;
 
@@ -41,19 +76,21 @@ header{
         font-family: "Arvo", Times New Roman, Times, serif;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .selected{ border-bottom: 4px solid #333;}
 
     .fa{
         padding-right: 10px;
+        color: #CE3A34;
     }
     }
 }
 
 body{
-    background-color: #fff;
+    background-image: url("background-texture.jpg");
+    background-repeat: repeat;
     max-width: 100%;
 
     .overlay{
@@ -223,7 +260,22 @@ body{
 
 footer{
     transition: background-color 0.5s ease;
-    background-color: #333;
+    background-color: #CE3A34;
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#CE3A34));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #E8413A, #CE3A34);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #E8413A, #CE3A34);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #E8413A, #CE3A34);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #E8413A, #CE3A34);
 }
 
 .foot-container{

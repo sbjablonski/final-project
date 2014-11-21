@@ -3,7 +3,7 @@
     width: 70%;
     padding-bottom: 20px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
 // BEERS //
 
@@ -23,18 +23,20 @@
 
         p{
             font-family: "Arvo", Times New Roman, Times, serif;
-            color: #333;
+            color: #404040;
             letter-spacing: .5px;
-            font-size: 90%;
+            font-size: 85%;
+            padding: 20px 0 20px 0;
+            line-spacing: 150%;
         }
 
         li{
             padding-right: 15px;
-            color: #333;
+            color: #404040;
             font-family: "Arvo", Times New Roman, Times, serif;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 80%;
+            font-size: 60%;
         }
     }
 
@@ -111,6 +113,7 @@
         transition: background-color 0.5s ease;
         color: #333;
         opacity: .66;
+        padding: 20px 0 20px 0;
     }
 
     .fa-video-camera:hover{

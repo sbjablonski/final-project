@@ -44,7 +44,7 @@
         beercount = 0;
         $('#rodeoclown').toggleClass('no-display');
         };
-        beercolors();
+        // beercolors();
     });
 
     $('#beer-left').on('click', function(){
@@ -60,7 +60,7 @@
         else{
             beercount -= 1;
         };
-        beercolors();
+        // beercolors();
     });
 
 // ON CLICK GO TO BEER CAN - When beer can is clicked, hide current beer-type and show the corresponding beer info. //
@@ -69,16 +69,16 @@ $('.beer-bug').on('click',function(){
     var beerid = $(this).attr('class').replace('beer-bug ','').replace(' large-2 medium-4 small-6 columns','');
     beerDisplayOff();
     $('#' + beerid).removeClass('no-display');
-    $.getJSON( "js/beer-objects.js", function(json) {
-        var beer_number = beersarray.indexOf(beerid);
-        var primary_json = json[beer_number].primary;
-        var secondary_json = json[beer_number].secondary;
-        $('.logo-cont').css('background-color', primary_json);
-        $('header').css('background-color', secondary_json);
-        $('footer').css('border-top','10px solid ' + primary_json);
-        $('footer').css('background-color', secondary_json);
-    })
-        .fail(function() {
-            console.log( "Something went wrong..." );
-        });
+    // $.getJSON( "js/beer-objects.js", function(json) {
+    //     var beer_number = beersarray.indexOf(beerid);
+    //     var primary_json = json[beer_number].primary;
+    //     var secondary_json = json[beer_number].secondary;
+    //     $('.logo-cont').css('background-color', primary_json);
+    //     $('header').css('background-color', secondary_json);
+    //     $('footer').css('border-top','10px solid ' + primary_json);
+    //     $('footer').css('background-color', secondary_json);
+    // })
+    //     .fail(function() {
+    //         console.log( "Something went wrong..." );
+    //     });
 });
